@@ -31,14 +31,11 @@ On the root of this project run on your terminal (if you want you can do this wi
     npm install gulp@3.9.1 -g 
     npm install webpack@4.25.1 -g
     npm install webpack-cli@3.1.2 -g
+    npm i jquery --save
     npm i handlebar -save
-
-npm install gulp gulp-sass gulp-autoprefixer gulp-concat gulp-sourcemaps --dev-save
-npm install child_process node-sass -save
-npm i jquery --save
-npm i handlebar -save
-npm i handlebars-loader --save
+    npm i handlebars-loader --save
 ```
+
 
 plugins: [
     new webpack.ProvidePlugin({
