@@ -1,0 +1,233 @@
+.registerGroup {
+     clear: both;
+}
+
+.registerGroup ul {
+     list-style-type: none;
+}
+
+.breadcrumbDiv {
+     margin: -10px auto 10px;
+     padding: 0px 10px;
+}
+
+.breadcrumbDiv, .breadCrumb {
+     color: #999! important;
+     font-size: 10px;
+     text-shadow: 1px 1px #FFFFFF;
+}
+
+.breadcrumbcontainer
+{
+    background-color:#fff;
+    }
+.breadCrumb {
+     background: none repeat scroll 0% 0% #ddd;
+     display: block;
+     float: left;
+     height: 22px;
+     line-height: 22px;
+     margin: 10px 18px 10px 0px;
+     padding: 0px 5px;
+     position: relative;
+}
+
+.breadCrumb:before {
+     border-color: #ddd #ddd #ddd transparent;
+     border-style: solid;
+     border-width: 11px 0px 11px 11px;
+     content: "";
+     left: -1em;
+     margin-top: -11px;
+     position: absolute;
+     top: 50%;
+}
+
+.breadCrumb:after {
+     border-bottom: 11px solid transparent;
+     border-left: 11px solid #ddd;
+     border-top: 11px solid transparent;
+     content: "";
+     margin-top: -11px;
+     position: absolute;
+     right: -1em;
+     top: 50%;
+}
+.dnnlogginbox{
+    display:block;
+    padding-top:8px;
+    float:right;
+}
+.registerGroup{
+    display:block;
+    float:left;
+}
+.userMessages, .userNotifications, .userProfileImg{
+    display:none;
+}
+input[type="image"] {
+    width:auto;
+}
+
+.loginContent input{
+    display:inline;
+    margin-bottom:10px;
+}
+.loginContent{
+    height:200px
+}
+.dnn_mact .dnn_moduleorderindex{
+    padding-left:2px;
+    color:#fff;
+    margin-top:1px;
+    background-color:#000;
+    font-weight:bold;  
+}
+.stretchImage {
+ 
+  max-width:100%;height:auto;
+}
+
+#bb_barnensboktipsContainer #bb_DetailBookForf{
+  
+    margin-left: 1em;
+}
+
+.socialbox img{
+    float:left;
+    padding-right:0.1em;
+}
+#dnn_foterPane_4_4 p{clear:both;}
+.socialbox {display:block;clear:right; width:98%;}
+.socialbox img:hover{opacity: 0.7; filter: alpha(opacity=30);}
+#barnbibblanfoot img{padding:2px 0px;margin: 0px;}
+
+#bb_barnensboktipsContainer .bb_DetailBookContent{
+    line-height:12px;
+    margin-bottom:0px;
+    margin-top:0px;
+    margin-left: 0em;
+font-style:italic;
+}
+#bb_barnensboktipsContainer h2 a{
+  	font-style:italic;
+    color:#F29100;
+}
+#bb_barnensboktipsContainer .bb_itmfooter {
+    margin-left: 0em;
+    font-style:italic;
+}
+#readspeaker_button1 .rsbtn_powered{display:none;}
+#ReadspeakerBox{
+    display:none;
+	position:fixed;
+	width:auto;
+	top:0%;
+	left:40%;
+	padding-top:15px;	
+}
+#readspeaker_button1{
+    z-index:9999;
+}
+#lyssarealspeakercont{
+    _float:right;
+  padding-left:3px;
+}
+#lyssarealspeakercont img:hover{
+ transform:scale(1.1); -webkit-transform:scale(1.1);    
+}
+.item iframe{margin-left:1.5%;margin-top:-10px;}
+.moduleorderindex{
+    margin-top:1px!important; 
+    background-color:#000 !important;
+}
+
+.bokemonBoardMaincontainer{
+    font-family: 'Lato', sans-serif;
+    color:#000; 
+}
+.BM_header{
+    padding:0.4rem;
+    margin-bottom:1px;
+    max-width:300px;  
+    background:#000;    
+    overflow:hidden;
+    color:#fff;
+    border-radius:10px 10px 0 0;
+}
+.BM_header h1{
+	font-size:2rem !important;
+    color:#fff;
+     margin-left:4px;
+}
+.BM_header h2{
+	font-size:1rem !important;
+    color:#fff;
+    margin-left:4px;
+}
+.BM_header h3{
+	font-size:1rem !important;    
+    color:#fff;
+    margin-left:5px;
+}
+.BM_header a {
+    float:right;
+    color:#fff;
+}
+.BM_header a:hover {    
+    color:#fcb040;
+}
+.BM_list ul{
+    list-style:none;
+    margin-top:0px;
+    padding-top:0px;
+    margin-left:0px;
+    padding-left:0px;
+    overflow:hidden; 
+}
+.BM_list li{
+    clear:both; 
+    overflow:hidden;
+    margin-bottom:1px;
+    max-width:300px;  
+    background:#fff;
+    padding-top:4px;
+    padding-bottom:4px;    
+}
+
+.bm_itm_infocont{
+	float:left;
+    font-size:0.6rem;
+}
+.bm_itm_infocont h1{
+  font-size:1.3rem !important;
+    margin-left:0px !important;
+}
+.bm_itm_infocont h2{
+  font-size:0.95rem !important;
+    margin-left:0px !important;
+}
+.bm_itm_imgcont{
+    overflow:hidden; 
+	float:left;
+    margin-right:0.5rem;
+    width:70px;
+}
+.BM_clear {
+    clear:both;
+}
+
+.BM_list li:hover {    
+    background-color:#eee;
+}
+
+#topboxheader {
+    height:15vw!important;
+    max-height:120px!important;
+    margin-bottom: 0%!important;
+    margin-top: 0%!important;
+    /*background-image: url(/Portals/_default/Skins/bb_DAGOBAH_krypin/images/toplogo4.png);*/
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}

@@ -1,0 +1,25 @@
+<ul id="flexmenu">
+	[*>NODE]
+</ul>
+
+[>NODE]
+	<li class="[?FIRST]first[/?][?LAST] last[/?][?SELECTED] selected[/?]">
+		[?ENABLED]
+			<a href="[=URL]">[=TEXT]</a>
+		[?ELSE]
+			[=TEXT]
+		[/?]
+		[?NODE]
+			<ul>
+				[*>NODE]
+				<li class="[?FIRST]first[/?][?LAST] last[/?][?SELECTED] selected[/?]">
+				[?ENABLED]
+					<a href="[=URL]">[=TEXT]</a>
+				[?ELSE]
+					[=TEXT]
+				[/?]
+			</ul>
+		[/?]
+	</li>
+[/>]
+
