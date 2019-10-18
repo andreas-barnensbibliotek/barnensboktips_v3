@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="SV">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <title>Barnens bibliotek</title>
+
+    <link href="skin.css" rel="stylesheet">
+    
+</head>
+<body>
+
+<!-- Above this is only for localhost testning Jennie -->
+
+<div class="container batuu-container">
+
+    <!-- Header -->
+    <div class="row"> 
+        <!-- Logo -->
+        <div class="batuu-logo-container col-4 col-lg-2 order-2 order-lg-1">
+            <img src="images/bblogo2.png" class="batuu-logo img-fluid">
+        </div>
+
+        <!-- Server -->
+        <div class="col-12 col-lg-6 order-1 order-lg-2 batuu-header-content text-center">
+           <img src="images/bok1.jpg" alt="..." class="img-thumbnail">
+        </div>
+
+        <!-- inlogg med mera -->
+        <div class="col-8 col-lg-4 mt-2 order-3">
+
+                    <div class="d-flex bd-highlight">
+                    <a href="#" class="mr-auto bd-highlight"><p class="batuu-header-links batuu-user">Bli medlem</p></a>
+                        <a href="#" class="bd-highlight"><p class="batuu-header-links batuu-login">Logga in</p></a>
+                        <!-- När man är inloggad
+                        <a href="# class="bd-highlight"><p class="batuu-header-links batuu-logout "> Logga ut</p></a> 
+                        -->  
+                        <a href="#" class="bd-highlight ml-4"><p class="batuu-header-links"><i class="fas fa-volume-up"></i></p></a>
+                    </div>
+
+            <div class="input-group mb-3 mt-2">
+                <input type="text" class="form-control form-control-sm" placeholder="Sök" aria-label="Sök" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-batuu-green btn-sm" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <!-- TESTA DENNA KODEN NEDAN ISTÄLLET
+            
+                <span id="searchboxen">
+                    <dnn:SEARCH runat="server" ID="dnnSEARCH" CssClass="btn btn-batuu-green" UseDropDownList="true" Submit="<i class="fas fa-search"></i>" />
+                </span>
+            -->
+
+
+
+        </div>
+         
+        <!-- meny -->
+        <div  class="col px-0 order-4">
+            <!-- OLD NAV ############################################################### -->
+                <!--
+                    <nav id="topnav">
+                            <div id="flexmenubox"></div>
+                            <div id="menyn" class="containermargins clear">
+                                <dnn:MENU ID="MENU1" MenuStyle="Simple" runat="Server" />
+                            </div>
+                    </nav>
+                -->
+
+            <!-- NEW NAV ############################################################### -->
+           
+            <nav class="navbar p-0 navbar-expand-lg navbar-dark bg-dark justify-content-end">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto d-flex flex-wrap">
+                            <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        HEM
+                                    </a>
+                                           <!-- Scrollbar dropdown bara lägg till classen scrollable-menu-->
+                                    <div class="dropdown-menu scrollable-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here to read more about</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                BOKTIPS
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                FÖRFATTARE
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MENU ITEM 2
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MENU TEM 3
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MENU ITEM 4
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MENU ITEM 5
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MENU ITEM 6
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+            </nav>
+
+        </div>
+    </div>
+    <!-- #############################      HEADER ENDS        ################################################## -->
+
+    <!-- content -->
+
+
+
+
+
+
+    <div class="row p-2 my-4">
+        <div class="col">
+            <form>
+                <div class="form-row">
+                    <div class="col-9">
+                    <input type="text" class="form-control" placeholder="Vad letar du efter?">
+                    </div>
+                    <div class="col-3">
+                        <button type="submit" class="btn btn-batuu-green mb-2 btn-block">Sök</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-md-6 col-sm-12">
+                <button type="button" class="btn btn-batuu-yellow btn-sm btn-category">Start</button>
+                <button type="button" class="btn btn-batuu-orange btn-sm btn-category">Börja läsa</button>
+                <button type="button" class="btn btn-batuu-green btn-sm btn-category">6-9 år</button>
+                <button type="button" class="btn btn-batuu-blue btn-sm btn-category">9-12 år</button>
+                <button type="button" class="btn btn-batuu-purple btn-sm btn-category">Ungdom</button>
+                <button type="button" class="btn btn-batuu-teak btn-sm btn-category">Serier</button>
+                <button type="button" class="btn btn-batuu-pink btn-sm btn-category">Fakta</button>
+        </div>
+        <div class="col-md-4 col-sm-12 batuu-category-div">
+            <a>
+                <img src="images/icons/aventyr50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/barn50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/framtiden50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/grata50.gif" alt="..." class="batuu-category-icon">
+            <a>
+                <img src="images/icons/sport50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/aventyr50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/barn50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/framtiden50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/grata50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/sport50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/aventyr50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/barn50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/framtiden50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/grata50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/sport50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/aventyr50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/barn50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/framtiden50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/grata50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/sport50.gif" alt="..." class="batuu-category-icon">
+            </a>
+            <a>
+                <img src="images/icons/sport50.gif" alt="..." class="batuu-category-icon">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="row p-2">
+            <div class="col">
+                <h2>Månadens tema</h2>
+            </div>
+    </div>
+    
+    <div class="row p-2 mx-n2 batuu-background-row">
+
+        
+            <div class="col d-flex align-items-end p-4 batuu-background-row-item">
+                <a href="#">
+                    <div class="text-center">
+                            <div class="batuu-book-img">
+                                <img src="images/bok1.jpg" alt="..." class="img-thumbnail">
+                            </div>
+                            <div class="batuu-book-title">
+                                <p class="font-weight-bold my-1">Boktitel</p>
+                                <p class="font-weight-light my-0">Författare</p>
+                            </div>
+                    </div>
+                </a>
+                <div class="align-self-start">
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-light btn-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Gå till boken</a>
+                            <a class="dropdown-item" href="#">Skriv boktips</a>
+                            <a class="dropdown-item" href="#">Läser denna just nu</a>
+                            <a class="dropdown-item" href="#">Ta bort från listan</a>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col d-flex align-items-end p-4 batuu-background-row-item">
+                <div class="text-center">
+                    <div class="batuu-book-img">
+                        <img src="images/bok2.jpg" alt="..." class="img-thumbnail">
+                    </div>
+                    <div class="batuu-book-title">
+                        <p class="font-weight-bold my-1">Boktitel</p>
+                      <p class="font-weight-light my-0">Författare</p>
+                    </div>
+                </div>
+
+                <div class="align-self-start">
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-light btn-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Gå till boken</a>
+                            <a class="dropdown-item" href="#">Skriv boktips</a>
+                            <a class="dropdown-item" href="#">Läser denna just nu</a>
+                            <a class="dropdown-item" href="#">Ta bort från listan</a>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex align-items-end p-4 batuu-background-row-item">
+                <div class="text-center">
+                        <div class="batuu-book-img">
+                            <img src="images/bok3.jpg" alt="..." class="img-thumbnail">
+                        </div>
+                        <div class="batuu-book-title">
+                            <p class="font-weight-bold my-1">Boktitel</p>
+                            <p class="font-weight-light my-0">Författare</p>
+                        </div>
+                </div>
+
+                <div class="align-self-start">
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-light btn-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Gå till boken</a>
+                            <a class="dropdown-item" href="#">Skriv boktips</a>
+                            <a class="dropdown-item" href="#">Läser denna just nu</a>
+                            <a class="dropdown-item" href="#">Ta bort från listan</a>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex align-items-end p-4 batuu-background-row-item">
+                <div class="text-center">
+                        <div class="batuu-book-img">
+                            <img src="images/bok2.jpg" alt="..." class="img-thumbnail">
+                        </div>
+                        <div class="batuu-book-title">
+                            <p class="font-weight-bold my-1">Boktitel</p>
+                            <p class="font-weight-light my-0">Författare</p>
+                        </div>
+                </div>
+
+                <div class="align-self-start">
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-light btn-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Gå till boken</a>
+                            <a class="dropdown-item" href="#">Skriv boktips</a>
+                            <a class="dropdown-item" href="#">Läser denna just nu</a>
+                            <a class="dropdown-item" href="#">Ta bort från listan</a>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex align-items-end p-4 batuu-background-row-item">
+                <div class="text-center">
+                        <div class="batuu-book-img">
+                            <img src="images/bok2.jpg" alt="..." class="img-thumbnail">
+                        </div>
+                        <div class="batuu-book-title">
+                            <p class="font-weight-bold my-1">Boktitel</p>
+                            <p class="font-weight-light my-0">Författare</p>
+                        </div>
+                </div>
+
+                <div class="align-self-start">
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-light btn-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Gå till boken</a>
+                            <a class="dropdown-item" href="#">Skriv boktips</a>
+                            <a class="dropdown-item" href="#">Läser denna just nu</a>
+                            <a class="dropdown-item" href="#">Ta bort från listan</a>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="row d-flex justify-content-center p-2">
+            <div class="col">
+                <h2>Senaste boktipsen</h2>
+            </div>
+    </div>
+    
+    <div class="row p-2 mx-n2 batuu-background-row">
+
+        
+            <div class="col d-flex align-items-center p-4 batuu-background-row-item">
+                <div class="text-center">
+                    <img src="images/bok1.jpg" alt="..." class="img-thumbnail">
+                    <p class="font-weight-bold my-1">Boktitel</p>
+                    <p class="font-weight-light my-0">Författare</p>
+                </div>
+
+                <div class="align-self-start">
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-light btn-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Gå till boken</a>
+                            <a class="dropdown-item" href="#">Skriv boktips</a>
+                            <a class="dropdown-item" href="#">Läser denna just nu</a>
+                            <a class="dropdown-item" href="#">Ta bort från listan</a>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col d-flex align-items-center p-4 batuu-background-row-item">
+                <div class="text-center">
+                    <img src="images/bok1.jpg" alt="..." class="img-thumbnail">
+                    <p class="font-weight-bold my-1">Boktitel</p>
+                    <p class="font-weight-light my-0">Författare</p>
+                </div>
+
+                <div class="align-self-start">
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-light btn-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Gå till boken</a>
+                            <a class="dropdown-item" href="#">Skriv boktips</a>
+                            <a class="dropdown-item" href="#">Läser denna just nu</a>
+                            <a class="dropdown-item" href="#">Ta bort från listan</a>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex align-items-center p-4 batuu-background-row-item">
+                <div class="text-center">
+                    <img src="images/bok1.jpg" alt="..." class="img-thumbnail">
+                    <p class="font-weight-bold my-1">Boktitel</p>
+                    <p class="font-weight-light my-0">Författare</p>
+                </div>
+
+                <div class="align-self-start">
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-light btn-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Gå till boken</a>
+                            <a class="dropdown-item" href="#">Skriv boktips</a>
+                            <a class="dropdown-item" href="#">Läser denna just nu</a>
+                            <a class="dropdown-item" href="#">Ta bort från listan</a>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex align-items-center p-4 batuu-background-row-item">
+                <div class="text-center">
+                    <img src="images/bok1.jpg" alt="..." class="img-thumbnail">
+                    <p class="font-weight-bold my-1">Boktitel</p>
+                    <p class="font-weight-light my-0">Författare</p>
+                </div>
+
+                <div class="align-self-start">
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-light btn-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Gå till boken</a>
+                            <a class="dropdown-item" href="#">Skriv boktips</a>
+                            <a class="dropdown-item" href="#">Läser denna just nu</a>
+                            <a class="dropdown-item" href="#">Ta bort från listan</a>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex align-items-center p-4 batuu-background-row-item">
+                <div class="text-center">
+                    <img src="images/bok1.jpg" alt="..." class="img-thumbnail">
+                    <p class="font-weight-bold my-1">Boktitel</p>
+                    <p class="font-weight-light my-0">Författare</p>
+                </div>
+
+                <div class="align-self-start">
+                    <div class="dropdown dropleft">
+                        <button class="btn btn-light btn-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Gå till boken</a>
+                            <a class="dropdown-item" href="#">Skriv boktips</a>
+                            <a class="dropdown-item" href="#">Läser denna just nu</a>
+                            <a class="dropdown-item" href="#">Ta bort från listan</a>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+    <div class="d-flex justify-content-center">
+        
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true"><i class="fas fa-angle-left"></i></span>
+                    </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true"><i class="fas fa-angle-right"></i></span>
+                    </a>
+                    </li>
+                </ul>
+            </nav>
+
+    </div>
+
+    <div class="row batuu-rating-footer mx-n2">
+        <div class="col p-4">
+            <img src="images/icons/fjaril.gif" alt="..." class="float-left mr-3 mt-2">
+            <p>
+                Böckerna visas i nyast-ordning. Använd <strong> Avancerad sök </strong>om du vill leta på fler sätt. <br><br>
+
+                Sätt betyg på böckerna genom att klicka på <strong>fjärilarna</strong>. 1 fjäril = dålig - 5 fjärilar = superbra. Eller skriv ett bokomdöme! <br>
+                Se om boken finns på just ditt bibliotek, som e-bok eller som talbok. Lyssna på en Bokpuff eller se presentationen teckentolkat. <br>
+                Om du loggar in kan du skapa och spara boklistor i ditt krypin. 
+            </p>
+
+            <p class="my-0"><a href="#"><i class="fas fa-link"></i> Om katalogen</a></p>
+            <p><a href="#"><i class="fas fa-link"></i> Copyright/information om ämnessymbolerna</a></p>
+        </div>
+
+
+    </div>
+
+
+ <!-- Footer -->
+
+    <div class="row batuu-footer mx-n2">
+        <div class="col-3">
+            <!-- CONTAINER ################################################################################################ -->
+            <div id="foterpane_1_4Pane"><span id="foterPane_1_4" runat="server"></span></div>
+        </div>
+        <div class="col-3">
+            <!-- CONTAINER ################################################################################################ -->
+            <div id="foterpane_2_4Pane"><span id="foterPane_2_4" runat="server"></span></div>
+        </div>
+        <div class="col-3">
+            <!-- CONTAINER ################################################################################################ -->
+            <div id="foterpane_3_4Pane"><span id="foterPane_3_4" runat="server"></span></div>
+        </div>
+        <div class="col-3">
+            <!-- CONTAINER ################################################################################################ -->
+            <div id="foterpane_4_4Pane"><span id="foterPane_4_4" runat="server"></span></div>
+        </div>
+        <div class="col-12">
+            <img class="img-fluid" src="images/footerlogo.png" runat="server" />
+        </div>
+    </div>
+
+
+
+
+</div>  <!-- MAIN CONTAINER END -->
+
+
+<div class="container">
+    <div id="licbox" class="wrapper row4">
+        <div id="copyright" class="clear">
+            <p class="fl_left">&copy; <a href="/Hem/Regler/tabid/865/Default.aspx">L&aring;na av oss</a> - <a href="#">barnensbibliotek.se</a></p>
+            <p class="fl_right"></p>
+        </div>
+    </div>
+
+    <div id="ReadspeakerBox">
+        <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+            <a rel="nofollow" class="rsbtn_play" accesskey="L" title="Lyssna p&aring; sidans text med ReadSpeaker" href="http://app.eu.readspeaker.com/cgi-bin/rsent?customerid=4430&amp;lang=sv_se&amp;readid=itemheight1bgrgb_ljusgra">
+                <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Lyssna</span></span></span>
+                <span class="rsbtn_right rsimg rsplay rspart"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Below this is only for localhost testning Jennie -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+<script src="layout/scripts/jquery.cookiesdirective.js"></script>
+<script src="layout/scripts/jquery.slicknav.min.js"></script>
+<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="public/js/aj_barnensboktips.3.0.js"></script>
+
+<script src="assets/jsbundle/jplist/jplist.min.js"></script>
+
+<script>
+        jplist.init();
+</script>
+
+
+
+
+
+
+</body>

@@ -1,0 +1,19 @@
+#aj_bb_filterbtn{
+    // ska vara inline vid användning
+    display:inline;
+    margin:0;
+}
+
+
+.aj_bb_listSelectheader{
+    margin-top: .2rem;
+    margin-left:.25rem;
+    margin-right:.25rem;
+}
+#aj_bb_itemperpage{
+
+    li{background-color: #ddd;
+        padding-left: 1rem;
+        a{color:black;}
+    }
+}

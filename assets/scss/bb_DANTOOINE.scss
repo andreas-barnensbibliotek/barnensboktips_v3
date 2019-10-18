@@ -1,0 +1,725 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import "reset";
+@import "bootstrap4/_main_bootstrap.scss";
+@import "./bootstrappagination";
+@import "autocomplete/autocomplete";
+@import "./kataloglistning/boklistordrp";
+@import "./kataloglistning/kataloglistningextra";
+
+/**
+ * dropdown
+ */
+#barnensbiblCurrentUserid{display: none;}
+#ReadspeakerBox{display: none;
+    margin-top:1rem;
+}
+
+
+.bred{
+    border: 1px solid red;
+}
+ body {
+    background-color: $body-background-color;
+    color: $body-color; 
+    background-image: url("./images/Nalle_Barnensbibliotek_BG.png");
+    background-repeat: no-repeat;
+    background-position: center top; 
+}
+
+#mainboklistcontainer{
+    background-image: linear-gradient(snow, white);
+}
+
+a {
+    color: $body-color;
+
+    &:hover{
+        color: $batuu-teak;
+    }
+}
+
+.batuu-link{
+  	color: $batuu-teak;
+
+    &:hover,
+    &:active {
+      color: $body-color; 
+    }
+
+
+}
+
+.batuu-container {
+    background-color: $white;
+}
+
+.batuu-logo {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 8;
+    max-height: 175px;
+    padding-left: 0;
+
+    @include media-breakpoint-between(lg, xl) {   
+        padding-left: 20px;
+    }
+}
+
+.batuu-logo-container{
+    max-height: 120px;
+}
+
+.batuu-header-links{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.batuu-user::before{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f007";
+    margin-right: 5px;
+
+}
+.batuu-login::before{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f023";
+    margin-right: 5px;
+
+}
+.batuu-logout::before{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f3c1";
+    margin-right: 5px;
+
+}
+
+.topheaderbg.head_bokhylla {
+    background-image: url("/Portals/_default/skins/bb_BATUU/images/bokhylla.png"); 
+}
+#searchboxen .form-control-sm{
+    padding: .5rem !important;
+}  
+.aj_searchbox a{
+    color:white !important;
+  }
+.batuu-header-content{
+    height: 150px;
+    overflow: hidden;
+   
+
+    @include media-breakpoint-up(sm) {
+        display: block;
+    }
+
+}
+
+.batuu-nav{
+    padding-left: -15px;
+    padding-right: -15px;
+}
+
+.navbar-dark {
+    .navbar-nav{
+        .nav-link {
+            font-weight: bold;
+            padding: 1rem 1rem;
+            color: $white;
+
+            &:hover{
+                background-color: $batuu-orange;
+                color: $body-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+.navbar-toggler{
+    height: 55px;
+    border: none;
+    .navbar-toggler-icon{
+        color: $white;
+    }
+
+}
+
+.dropdown-menu {
+    top: 95%;
+    border-radius: 0;
+    padding: 0;
+
+    .dropdown-item{
+        padding: .5rem 1.5rem;
+        color:$black;
+
+        &:hover{
+            background-color: lighten($batuu-vanilla, 20) ;
+            color: $body-color;
+        }
+    }
+}
+
+@include media-breakpoint-between(lg, xl) {   
+    .nav-item {
+        &:first-child{
+            margin-left: 165px;
+        }
+    }
+
+
+
+}
+
+
+
+li.dropdown:hover > .dropdown-menu {
+    background-color: $gray-800;
+
+    @include media-breakpoint-between(lg, xl) {   
+        display: block;
+        }    
+
+    .dropdown-item{
+        color: $white;
+        background-color: $gray-800;
+
+        &:hover{
+            background-color: $batuu-orange;
+            color: $body-color;
+        }
+    }
+
+}
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+
+/*
+
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu a::after {
+    transform: rotate(0deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    color: $white;
+    background-color: $gray-800;
+    top: 0;
+    left: 100%;
+    margin-left: .1rem;
+    margin-right: .1rem;
+  }
+
+.dropdown-submenu {
+    position: relative;
+
+    a::after {
+        transform: rotate(0deg);
+        position: absolute;
+        right: 6px;
+        top: .8em;
+      }
+      .dropdown-menu {
+        color: $white;
+        background-color: $gray-800;
+        top: 0;
+        left: 100%;
+        margin-left: .1rem;
+        margin-right: .1rem;
+      }
+}
+
+*/
+
+#bokdrakeitm{
+
+    img{
+        max-width: 100%;
+    }
+}
+#bokemonitm{
+
+    img{
+        max-width: 100%;
+    }
+}
+
+
+
+.batuu-background-row{
+    background-color: $batuu-background-row-color;
+}
+
+.batuu-background-row-item:hover{
+    background-color: rgba( $white, .4 );
+}
+.batuu-background-row-green{
+    background-color: #95C024;
+}
+
+.batuu-footer{
+    margin-top:1rem;
+    max-height:180px !important;
+    max-height: 380px;
+    padding: 2rem 1rem;
+    background-color: $batuu-brown;
+    border: 5px solid $batuu-lightbrown;
+}
+
+#footikonimg{
+    img{
+        max-width:100%;
+    }
+}
+
+
+@include media-breakpoint-between(md, xl) {   
+    .batuu-category-div{   
+        padding-right: 70px;
+        padding-top: .5rem; 
+    }   
+}
+
+@include media-breakpoint-down(sm) { 
+    .batuu-category-div{   
+        padding-top: 30px; 
+    }
+}
+
+.batuu-category-icon{
+    margin-bottom: 5px;
+    margin-right: 5px;
+    height: 25px;
+}
+
+
+.inline-block{
+    display: inline-block;
+}
+
+.batuu-book-img{
+    overflow: hidden;
+    max-width: 190px;
+}
+
+.batuu-book-title{
+    height: 70px;
+    bottom: 0;
+}
+
+.batuu-rating-item{
+    height: 20px;
+
+}
+
+.batuu-quote{
+    &::before{
+         content: "\”";
+    }
+    &::after{
+         content: "\”\.";
+    }
+}
+
+// Category button
+.btn-category {
+    width: 100px;
+    margin-top: $btn-block-spacing-y;
+  }
+  
+// Circle button
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    margin-left: 2px;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+}
+.btn-circle-drp{
+    width: 15px;
+    height: 15px;
+   
+    padding: 0;
+    font-size: 10px;
+    border-radius: 35px;
+    margin-right: 0.2rem;
+    margin-left: -1.1rem;
+    margin-bottom: .2rem;
+}  
+
+.page-link {
+    color: $gray-600;
+
+    &:hover{
+        color: $batuu-green;
+    }
+}
+
+.page-item.active .page-link {
+    color: $batuu-gray-900;
+    background-color: $batuu-green;
+    border-color: $batuu-green;
+
+}
+
+
+.batuu-rating-footer{
+    background-color: $gray-400;
+    padding: 5px;
+}
+
+
+
+// JPlist /////////////////////////////////////////////////////////
+
+.jplist-dd {
+    width: 200px;
+    background: #efefef;
+    color: #575757;
+    font-size: 13px;
+    border-radius: 2px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.jplist-dd-panel {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 7px;
+    transition: color 0.5s;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.jplist-dd-panel::after {
+    content: '\25BC';
+    display: inline-block;
+    float: right;
+    transition: transform 0.5s;
+    color: #a5a5a5;
+}
+
+.jplist-dd-panel.jplist-dd-opened::after {
+    transform: rotate(180deg);
+}
+
+.jplist-dd-panel:hover {
+    color: #000;
+}
+
+.jplist-dd-content {
+    display: none;
+}
+
+.jplist-dd-content.jplist-dd-opened {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    box-shadow: 3px 5px 5px #e0e0e0;
+    position: absolute;
+    background: #f5f5f5;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.jplist-dd-item {
+    border-bottom: 1px dotted #ccc;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    transition: background-color 0.5s;
+}
+
+.jplist-dd-item:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.jplist-dd-item:last-child {
+    border: 0;
+}
+/**
+ * horizontal
+ */
+
+.jplist-slider {
+    width: 300px;
+    height: 20px;
+    background: #efefef;
+    margin-right: 15px;
+    margin-bottom: 35px;
+    border-radius: 2px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.jplist-slider::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.jplist-slider-holder-1,
+.jplist-slider-holder-2 {
+    width: 10px;
+    height: 100%;
+    border-radius: 2px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 0);
+    z-index: 200;
+    transition: 0.3s background-color;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.jplist-slider-holder-1 {
+    background: #000;
+}
+
+.jplist-slider-holder-1:active {
+    background: #9f35ff;
+}
+
+.jplist-slider-holder-2 {
+    background: #822121;
+}
+
+.jplist-slider-holder-2:active {
+    background: #ff2888;
+}
+
+.jplist-slider-range {
+    width: 0;
+    height: 20px;
+    background: #ccc;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/**
+ * vertical
+ */
+
+.jplist-slider.jplist-slider-vertical {
+    width: 20px;
+    height: 300px;
+}
+
+.jplist-slider.jplist-slider-vertical::before {
+    width: 3px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+}
+
+.jplist-slider.jplist-slider-vertical .jplist-slider-holder-1,
+.jplist-slider.jplist-slider-vertical .jplist-slider-holder-2 {
+    height: 10px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: translate(0, -50%);
+}
+
+.jplist-slider.jplist-slider-vertical .jplist-slider-range {
+    width: 100%;
+    height: 0;
+}
+
+.jplist-items-per-page{
+    float:right;
+}
+
+
+.p-5-1 {
+    padding: 3rem !important;
+    padding-top:1rem !important;
+  }
+
+  
+
+// fix för small size screen -> put it in bootstrap library?
+@media (max-width: 576px) {
+    .pr-3{
+        padding-right:0rem!important;
+    }
+    .col-sm {
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%
+    }
+
+    .col-sm-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        max-width: none
+    }
+
+    .col-sm-1 {
+        -ms-flex: 0 0 8.33333%;
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%
+    }
+
+    .col-sm-2 {
+        -ms-flex: 0 0 16.66667%;
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%
+    }
+
+    .col-sm-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%
+    }
+
+    .col-sm-4 {
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%
+    }
+
+    .col-sm-5 {
+        -ms-flex: 0 0 41.66667%;
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%
+    }
+
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%
+    }
+
+    .col-sm-7 {
+        -ms-flex: 0 0 58.33333%;
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%
+    }
+
+    .col-sm-8 {
+        -ms-flex: 0 0 66.66667%;
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%
+    }
+
+    .col-sm-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%
+    }
+
+    .col-sm-10 {
+        -ms-flex: 0 0 83.33333%;
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%
+    }
+
+    .col-sm-11 {
+        -ms-flex: 0 0 91.66667%;
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%
+    }
+
+    .col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%
+    }
+    .p-4{
+        padding:1rem!important;
+    }
+    .p-5{
+        padding:1rem!important;
+    }
+    .p-5-1 {
+        padding:0!important;
+        padding-top: 1rem!important;
+    }
+}
+@media (min-width: 576px) {
+    .pr-3{
+        padding-right:0rem!important;
+    } 
+}
+@media (min-width: 768px) { 
+    
+ }
+ @media (min-width: 992px) { 
+    .pr-3{
+        padding-right:1.5rem!important;
+    }
+  }
+.aj_jplist_item{
+    img{
+        min-width: 90px;
+    }
+    min-width: 120px;
+}

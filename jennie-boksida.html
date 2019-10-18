@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="SV">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <title>Barnens bibliotek</title>
+
+    <link href="skin.css" rel="stylesheet">
+    
+</head>
+<body>
+
+<!-- Above this is only for localhost testning Jennie -->
+
+<div class="container batuu-container">
+
+    <!-- Header -->
+    <div class="row"> 
+        <!-- Logo -->
+        <div class="batuu-logo-container col-2">
+            <img src="images/bblogo2.png" class="batuu-logo">
+        </div>
+
+        <!-- Server -->
+        <div class="col-7">
+            <div class="d-none">
+                <span runat="server"></span>
+            </div>
+        </div>
+
+        <!-- inlogg med mera -->
+        <div class="col-3 mt-2">
+            
+
+                <!--     
+                <dnn:USER ID="USER1" CssClass="userbox" runat="server" Text="Bli medlem" LegacyMode="false" />
+                <dnn:LOGIN ID="LOGIN2" CssClass="loginbox" runat="server" Text="Logga in" LegacyMode="false" />
+                <a id="lyssarealspeakercont" href="" title="Lyssna p� sidan">
+                    <img id="lyssarealspeaker" class="lyssnarealspeaker" src="images/lyssnaRealspeaker.png" runat="server" />
+                </a>
+                -->
+            
+            <a href="#" class="font-weight-bold mr-3"><i class="fas fa-user"></i> Bli medlem</a>
+            <a href="#" class="font-weight-bold mr-3"><i class="fas fa-lock"></i> Logga in</a>
+            <a href="#" ><i class="fas fa-volume-up"></i></a>
+           
+
+            <div class="input-group mb-3 mt-2">
+                <input type="text" class="form-control form-control-sm" placeholder="Sök" aria-label="Sök" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-batuu-green btn-sm" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+        </div>
+         
+
+    </div>
+    <!-- #############################      HEADER ENDS        ################################################## -->
+
+    <!-- content -->
+<div style="height: 100px;"></div>
+<div class="row pr-3">
+    <div class="col-lg-9 mb-4">
+        <div class="row mb-5">
+            <div class="col-sm-3">
+                <div class="d-flex align-items-center batuu-background-row-item">
+
+                    <div class="text-center">
+                        <img src="images/bok1.jpg" alt="..." class="img-thumbnail">
+                    </div>
+    
+                    <div class="align-self-start">
+                        <div class="dropdown dropleft">
+                            <button class="btn btn-light btn-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Gå till boken</a>
+                                <a class="dropdown-item" href="#">Skriv boktips</a>
+                                <a class="dropdown-item" href="#">Läser denna just nu</a>
+                                <a class="dropdown-item" href="#">Ta bort från listan</a>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <h3 class="mb-0">Titel</h3>
+                <p class="my-0">av: <a href="#" class="batuu-link">Författare</a></p>
+                <div class="mt-0 d-flex justify-content-start">
+                    <div class="mr-2">
+                        <img src="images/icons/fjaril.gif" alt="..." class="batuu-rating-item">
+                        <img src="images/icons/fjaril.gif" alt="..." class="batuu-rating-item">
+                        <img src="images/icons/fjaril.gif" alt="..." class="batuu-rating-item">
+                        <img src="images/icons/fjaril.gif" alt="..." class="batuu-rating-item">
+                        <img src="images/icons/fjaril.gif" alt="..." class="batuu-rating-item">
+                    </div>
+                    <div class="">
+                        <p> XXX Röster | <a class="batuu-link" href="#">Läs vad andra tyckte om boken</a></p>
+                    </div>
+                </div>
+
+
+                <p>Beskrivande text om boken</p>
+
+            </div>
+        </div>           
+        <div class="row pr-2">
+            <div class="col-sm-6">
+                <div class="mx-0">
+                    <p class="my-0"><strong>Författare:</strong> <a href="#" class="batuu-link">Författare</a></p>
+                </div>
+                <div class="mx-0">
+                    <p class="my-0"><strong>Serie:</strong> <a href="#" class="batuu-link">Namn</a></p>
+                </div>
+                <div class="mx-0">
+                    <p class="my-0"><strong>Utgivningsår: </strong>2000</p>
+                </div>
+                <div class="mx-0">
+                    <p class="my-0"><strong>Förlag:</strong> <a href="#" class="batuu-link">Förlagsnamn</a></p>
+                </div>
+                <div class="mx-0">
+                    <p class="my-0"><strong>ISBN:</strong> 78346785678</p>
+                </div>
+                <div class="mx-0">
+                    <p class="my-0"><strong>Kategori:</strong> <a href="#" class="batuu-link">Kategori 1, Kategori 2</a></p>
+                </div>
+            </div>
+            <div class="col-sm-6 pb-3">
+                <div class="mx-0">
+                    <p class="my-0"><a href="#" class="batuu-link"><i class="fas fa-link"></i> Finns boken som talbok?</a></p>
+                </div>
+                <div class="mx-0">
+                    <p class="my-0"><a href="#" class="batuu-link"><i class="fas fa-link"></i> Läs ett smakprov</a></p>
+                </div>
+                <div class="mx-0">
+                      <p class="my-0"><strong>Finns boken att låna i:</strong> <a href="#" class="batuu-link">Stad</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 batuu-background-row rounded">
+        <h5 class="text-center mt-2">Andra som gillar den här boken gillar även dessa böcker</h5>
+        <div class="">
+            <div class="row d-flex align-items-end">
+                <div class="col-lg-4 col-3 p-2">
+                    <a href="#">
+                      <img src="images/bok1.jpg" alt="..." class="img-thumbnail">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-3 p-2">
+                    <a href="#">
+                        <img src="images/bok2.jpg" alt="..." class="img-thumbnail">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-3 p-2">
+                    <a href="#">
+                        <img src="images/bok3.jpg" alt="..." class="img-thumbnail">
+                    </a>
+                </div>                
+                <div class="col-lg-4 col-3 p-2">
+                        <a href="#">
+                            <img src="images/bok3.jpg" alt="..." class="img-thumbnail">
+                        </a>
+                </div>                
+                <div class="col-lg-4 col-3 p-2">
+                        <a href="#">
+                            <img src="images/bok2.jpg" alt="..." class="img-thumbnail">
+                        </a>
+                </div>              
+                <div class="col-lg-4 col-3 p-2">
+                        <a href="#">
+                            <img src="images/bok2.jpg" alt="..." class="img-thumbnail">
+                        </a>
+                </div>                
+                <div class="col-lg-4 col-3 p-2">
+                        <a href="#">
+                            <img src="images/bok1.jpg" alt="..." class="img-thumbnail">
+                        </a>
+                </div>             
+                <div class="col-lg-4 col-3 p-2">
+                         <a href="#">
+                            <img src="images/bok3.jpg" alt="..." class="img-thumbnail">
+                        </a>
+                </div>               
+                <div class="col-lg-4 col-3 p-2">
+                        <a href="#">
+                            <img src="images/bok1.jpg" alt="..." class="img-thumbnail">
+                        </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+   <hr>  
+
+<div class="row">
+    <div class="col-12">
+        <h4>Författaren har även skrivit detta</h4>
+    </div>
+ </div>        
+<div class="row d-flex align-items-end">
+    <div class="col-lg-1 col-3 p-2">
+        <a href="#">
+            <img src="images/bok1.jpg" alt="..." class="img-thumbnail">
+        </a>
+    </div>
+    <div class="col-lg-1 col-3 p-2">
+        <a href="#">
+            <img src="images/bok2.jpg" alt="..." class="img-thumbnail">
+        </a>
+    </div>
+    <div class="col-lg-1 col-3 p-2">
+        <a href="#">
+            <img src="images/bok3.jpg" alt="..." class="img-thumbnail">
+        </a>
+    </div>                
+    <div class="col-lg-1 col-3 p-2">
+            <a href="#">
+                <img src="images/bok3.jpg" alt="..." class="img-thumbnail">
+            </a>
+    </div>                
+</div>
+   
+    
+ 
+<hr>    
+
+<div class="row pr-3 d-flex justify-content-between">
+    <div class="col-md-6 m-2 pb-3 batuu-background-row rounded">
+
+        <h4 class="mt-2">Vad tyckte andra som har läst boken?</h4>
+        <div class="my-4">
+            <p class="mb-0 batuu-quote">Jag tyckte de va super</p>
+            <p class="ml-2"><strong><i class="fas fa-user"></i> Namn</strong> X år</p>
+        </div>
+
+        <div class="my-4">
+            <p class="mb-0 batuu-quote">Spännande på slutet</p>
+            <p class="ml-2"><strong><i class="fas fa-user"></i> Namn</strong> X år</p>
+        </div>
+
+    </div>
+    <div class="col-md-5 pb-3">
+        <h4 class="mt-2">Vad tyckte du om boken?</h4>
+        <form>
+            <div class="form-group">
+                <label for="name">Vad heter du?</label>
+                <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Namn">
+            </div>
+            <div class="form-group">
+                <label for="age">Hur gammal är du?</label>
+                <select class="form-control" id="age">
+                <option>Välj din ålder</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>Vuxen</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="review">Berätta vad du tyckte om boken:</label>
+                <textarea class="form-control" id="review" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-batuu-green"><i class="fas fa-paper-plane"></i> Skicka</button>
+        </form>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+
+    <div class="row batuu-footer mx-n2">
+        <div class="col-3">
+            <!-- CONTAINER ################################################################################################ -->
+            <div id="foterpane_1_4Pane"><span id="foterPane_1_4" runat="server"></span></div>
+        </div>
+        <div class="col-3">
+            <!-- CONTAINER ################################################################################################ -->
+            <div id="foterpane_2_4Pane"><span id="foterPane_2_4" runat="server"></span></div>
+        </div>
+        <div class="col-3">
+            <!-- CONTAINER ################################################################################################ -->
+            <div id="foterpane_3_4Pane"><span id="foterPane_3_4" runat="server"></span></div>
+        </div>
+        <div class="col-3">
+            <!-- CONTAINER ################################################################################################ -->
+            <div id="foterpane_4_4Pane"><span id="foterPane_4_4" runat="server"></span></div>
+        </div>
+        <div id="footikonimg">
+            <img id="Img1" src="images/footerlogo.png" runat="server" />
+        </div>
+    </div>
+
+
+
+
+</div>  <!-- MAIN CONTAINER END -->
+
+
+<div class="container">
+    <div id="licbox" class="wrapper row4">
+        <div id="copyright" class="clear">
+            <p class="fl_left">&copy; <a href="/Hem/Regler/tabid/865/Default.aspx">L&aring;na av oss</a> - <a href="#">barnensbibliotek.se</a></p>
+            <p class="fl_right"></p>
+        </div>
+    </div>
+
+    <div id="ReadspeakerBox">
+        <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+            <a rel="nofollow" class="rsbtn_play" accesskey="L" title="Lyssna p&aring; sidans text med ReadSpeaker" href="http://app.eu.readspeaker.com/cgi-bin/rsent?customerid=4430&amp;lang=sv_se&amp;readid=itemheight1bgrgb_ljusgra">
+                <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Lyssna</span></span></span>
+                <span class="rsbtn_right rsimg rsplay rspart"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Below this is only for localhost testning Jennie -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+<script src="layout/scripts/jquery.cookiesdirective.js"></script>
+<script src="layout/scripts/jquery.slicknav.min.js"></script>
+<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="public/js/aj_barnensboktips.3.0.js"></script>
+
+<script src="assets/jsbundle/jplist/jplist.min.js"></script>
+
+<script>
+        jplist.init();
+</script>
+
+
+
+
+
+
+</body>

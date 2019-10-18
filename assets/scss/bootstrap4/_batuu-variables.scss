@@ -1,0 +1,47 @@
+
+
+/* Colors */
+
+$batuu-gray-900: #212529;
+
+
+$batuu-blue:      #20ACDE ; // Blue #20ACDE
+$batuu-purple:    #7067AB ; // Purple #7067AB
+$batuu-light-pink:#F0C2C5 ; // Light Pink #F0C2C5
+$batuu-pink:      #C22970 ; // Pink #C22970
+$batuu-orange:    #F29100 ; // Orange #F29100
+$batuu-yellow:    #FFEF42 ; // Yellow #FFEF42
+$batuu-green:     #95C024 ; // Green #95C024
+$batuu-teak:      #AA9256 ; // Brown #AA9256
+$batuu-vanilla:   #CCBE9B ;  //Vanilla #CCBE9B
+$batuu-grey:      #6c757d ;
+$batuu-lightbrown:#976b41 ;
+$batuu-brown:     #664924 ;
+
+$link-visited: darken($batuu-orange, 20% );
+
+
+$body-background-color:         #8cc4df ; //Background color
+$batuu-background-row-color: lighten( $batuu-vanilla, 10% );
+
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "batuu-blue":        $batuu-blue,
+  "batuu-purple":      $batuu-purple,
+  "batuu-light-pink":  $batuu-light-pink,
+  "batuu-pink":        $batuu-pink,
+  "batuu-orange":      $batuu-orange,
+  "batuu-yellow":      $batuu-yellow,
+  "batuu-green":       $batuu-green,
+  "batuu-teak":        $batuu-teak,
+  "batuu-vanilla":     $batuu-vanilla,
+  "batuu-lightbrown":  $batuu-lightbrown,
+  "batuu-brown":       $batuu-brown
+), $theme-colors);
+
+
+/*
+$yiq-text-dark: $batuu-gray-900;
+$yiq-text-light: $batuu-gray-900;
+*/

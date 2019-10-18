@@ -10,8 +10,66 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 @import url('https://fonts.googleapis.com/css?family=Baloo|Hind+Siliguri|Questrial|Roboto');
 /*@import url(public/css/external/fontawesome_all.css);*/
 /*@import url(public/css/bootstrap-grid.css);*/
-@import url(public/css/styles.css);
+
+@import url(public/css/fontawesome_all_5-9.css); /* Newest version of Font awesome 5.9 */
+@import url(public/css/bb_DANTOOINE.css);
+
+
+/*
 
 @import url(layout/styles/main.css);
 @import url(layout/styles/mediaqueries.css);
 @import url(layout/styles/slicknav.css);
+
+*/
+
+.aj_bb_fjarilsrating{
+    width: 120px!important;
+}
+.im
+{
+    background-size: 34px 32px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 32px;
+    display: inline-block;
+}
+
+#aj_bb_detaljBlock{
+    padding-top:.5rem;
+    padding-left:1.5rem;
+    margin-bottom:3rem;
+}
+.aj_bb_itm{
+    max-width: 100px;
+    margin:.2rem;
+}
+@media (min-width: 768px) { 
+   #aj_bb_AlsoLikeThis{
+        margin-left:.5rem;
+    } 
+}
+
+#aj_bb_age{
+    width: 50px;
+}
+.aj_bb_formAlert{
+    color:red;
+}
+.userToOpacBytbibl_link{
+    margin-left:1rem;
+    font-size:.8rem;
+}
+#opacDrpdownBlock{
+    margin-left:2rem;
+    font-size:.8rem;
+}
+
+.LoginPanel{
+    margin-top:2rem;
+}
+
+.aj_jplist_item img {
+    min-width: 25px;
+    border:0;
+}

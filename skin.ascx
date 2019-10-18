@@ -32,7 +32,7 @@
         </div>    
         <div class="headerrightcol">
             <div id="logginBlock">
-            <a id="lyssarealspeakercont" href="" title="Lyssna på sidan"> <img id="lyssarealspeaker" class="lyssnarealspeaker" src= "images/lyssnaRealspeaker.png" runat="server" /></a>
+            <a id="lyssarealspeakercont" href="" title="Lyssna pï¿½ sidan"> <img id="lyssarealspeaker" class="lyssnarealspeaker" src= "images/lyssnaRealspeaker.png" runat="server" /></a>
               <dnn:USER ID="USER1" CssClass="userbox" runat="server" Text="Bli medlem" LegacyMode="false" />
               <dnn:LOGIN ID="LOGIN2" CssClass="loginbox" runat="server" Text="Logga in" LegacyMode="false" />
               <span id="searchboxen">
@@ -127,4 +127,4 @@
 <dnn:DnnJsInclude runat="server" FilePath="layout/scripts/jquery.cookiesdirective.js" PathNameAlias="SkinPath"/>
 <dnn:DnnJsInclude runat="server" FilePath="layout/scripts/jquery.slicknav.min.js" PathNameAlias="SkinPath" />
 <dnn:DnnJsInclude runat="server" FilePath="layout/scripts/custom.js" PathNameAlias="SkinPath" />
-<dnn:DnnJsInclude runat="server" FilePath="public/js/aj_bb_katalogenbundle.1.0.0.js" PathNameAlias="SkinPath" />
+<dnn:DnnJsInclude runat="server" FilePath="public/js/aj_barnensboktips.3.0.js" PathNameAlias="SkinPath" />
