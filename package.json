@@ -63,7 +63,7 @@
     "gulp-cli": "^2.2.0",
     "handlebar": "^1.0.0",
     "handlebars-loader": "^1.7.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.11",
     "webpack-dev-server": "^3.1.14"
   }
